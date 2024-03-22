@@ -1,0 +1,28 @@
+Se necesita crear un componente de React para mostrar el clima actual en una ciudad. El componente debe recibir como entrada el nombre de la ciudad y mostrar la temperatura actual en grados Celsius. Además, si la temperatura es superior a 30 grados Celsius, debe mostrar un mensaje de "Hace mucho calor", y si la temperatura es inferior a 10 grados Celsius, debe mostrar un mensaje de "Hace mucho frío".
+
+Para obtener la temperatura actual de la ciudad, se proporciona una API REST que devuelve la temperatura en grados Celsius. La API REST se encuentra en la siguiente URL: https://api.openweathermap.org/data/2.5/weather?q={ciudad}&units=metric&appid={API_KEY}, donde {ciudad} es el nombre de la ciudad y {API_KEY} es una clave de API válida para acceder a la API. Es necesario registrarse para obtener la api key.
+
+Para mostrar los mensajes de "Hace mucho calor" o "Hace mucho frío", se debe utilizar el renderizado condicional.
+
+Requerimientos Funcionales:
+
+* Mostrar la temperatura actual en grados Celsius de una ciudad proporcionada.
+* Si la temperatura es superior a 30 grados Celsius, mostrar un mensaje de "Hace mucho calor".
+* Si la temperatura es inferior a 10 grados Celsius, mostrar un mensaje de "Hace mucho frío".
+
+Requerimientos No Funcionales:
+
+* Utilizar el hook useState para manejar el estado de la temperatura y el mensaje.
+* Utilizar el API proporcionado para obtener la temperatura actual de la ciudad.
+* Utilizar el renderizado condicional para mostrar el mensaje correspondiente.
+
+Pasos para resolver el ejercicio:
+
+1.Crear un nuevo componente React llamado ClimaCiudad.
+2.Importar el hook useState de React.
+3.Crear una variable de estado llamada temperatura y una variable de estado llamada mensaje.
+4.Crear una función llamada obtenerTemperatura que utilice la API proporcionada para obtener la temperatura actual de la ciudad proporcionada.
+5.Llamar a la función obtenerTemperatura en el useEffect del componente para obtener la temperatura actual al cargar el componente.
+6.Crear una expresión condicional que muestre el mensaje correspondiente dependiendo de la temperatura actual.
+7.Renderizar la temperatura y el mensaje utilizando JSX.
+8.Exportar el componente ClimaCiudad.
