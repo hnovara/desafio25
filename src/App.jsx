@@ -16,10 +16,10 @@ function ClimaCiudad({ ciudad, nombre }) {
 
                 if (data.main.temp > 30) {
                     setMensaje('Hace mucho calor');
-                } else if (data.main.temp < 30) {
+                } else if (data.main.temp < 10) {
                     setMensaje('Hace mucho frío');
                 } else {
-                    setMensaje('');
+                    setMensaje('Está lindo el clima');
                 }
             } catch (error) {
                 console.error('Error al obtener la temperatura:', error);
